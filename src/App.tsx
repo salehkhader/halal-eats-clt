@@ -1,5 +1,6 @@
-
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
+import { icon } from "leaflet"
+
 import React, { useState } from "react"
 
 import restaurants from "./data.json"
@@ -12,6 +13,11 @@ type Restaurant = {
 	googleMapsUrl: string
 	websiteUrl?: string
 }
+
+const ICON = icon({
+	iconUrl: "/marker.svg",
+	iconSize: [32, 32],
+})
 
 const App = () => {
 	const initialRestaurants: Restaurant[] = restaurants as Restaurant[]
@@ -77,7 +83,7 @@ const App = () => {
 							attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 						/>
 						{filteredRestaurants.map((restaurant, index) => (
-							<Marker key={index} position={restaurant.position}>
+							<Marker key={index} position={restaurant.position} icon={ICON}>
 								<Popup>
 									<div className="p-2">
 										<h2 className="text-lg font-bold">{restaurant.name}</h2>
