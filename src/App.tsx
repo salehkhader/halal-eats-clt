@@ -1,33 +1,42 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 import { icon } from "leaflet"
-
 import React, { useState } from "react"
 
+// Importing restaurant data from a local JSON file.
 import restaurants from "./data.json"
 
+// Type definition for Restaurant objects used in the application.
 type Restaurant = {
 	name: string
-	position: [number, number]
+	position: [number, number] // Tuple for latitude and longitude
 	address: string
 	phone: string
 	googleMapsUrl: string
-	websiteUrl?: string
+	websiteUrl?: string // Optional field for website URL
 }
 
+// Constant setup for the marker icon used in the map for each restaurant.
 const ICON = icon({
-	iconUrl: "/marker.svg",
-	iconSize: [32, 32],
+	iconUrl: "/marker.svg", // URL to the marker image
+	iconSize: [32, 32], // Size of the icon
 })
 
+/**
+ * Main App component containing the functionality for filtering and displaying restaurants on a map.
+ */
 const App = () => {
+	// State initialization for restaurants, filter text and filtered restaurant list.
 	const initialRestaurants: Restaurant[] = restaurants as Restaurant[]
-
 	const headerRef = React.useRef<HTMLHeadingElement>(null)
-
 	const [filter, setFilter] = useState("")
-	const [filteredRestaurants, setFilteredRestaurants] =
-		useState(initialRestaurants)
+	const [filteredRestaurants, setFilteredRestaurants] = useState(initialRestaurants)
 
+	/**
+	 * Checks if a restaurant matches the filter criteria.
+	 * @param restaurant - The restaurant to check.
+	 * @param filter - The filter string.
+	 * @returns A boolean indicating if the restaurant matches the filter.
+	 */
 	const restaurantMatchesFilter = (restaurant: Restaurant, filter: string) => {
 		const lowerCaseFilter = filter.toLowerCase()
 		return (
@@ -39,6 +48,10 @@ const App = () => {
 		)
 	}
 
+	/**
+	 * Handles changes to the filter input field, filtering the list of restaurants accordingly.
+	 * @param event - The change event from the input field.
+	 */
 	const handleFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const value = event.target.value
 		setFilter(value)
@@ -47,6 +60,7 @@ const App = () => {
 		)
 		setFilteredRestaurants(filtered)
 	}
+
 
 	return (
 		<div className="px-4 sm:px-16 lg:px-44 dark:bg-slate-900">
