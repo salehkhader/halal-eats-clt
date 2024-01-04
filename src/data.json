@@ -22,5 +22,37 @@
 		"phone": "+17047494525",
 		"googleMapsUrl": "https://maps.app.goo.gl/1y7yXyqQk4y4M8QF9",
 		"websiteUrl": "https://www.wrapway.com/"
+	},
+    {
+		"name": "Peño Mediterranean Grill",
+		"position": [35.33749489614332, -80.75696635391787],
+		"address": "2115 E Arbors Dr #190, Charlotte, NC 28262",
+		"phone": "+19802249791",
+		"googleMapsUrl": "https://maps.app.goo.gl/KoqDVM5vsYLrGkvJ6",
+		"websiteUrl": "https://www.penogrill.com/"
+	},
+    {
+		"name": "US Fried Chicken",
+		"position": [35.346565488849215, -80.74219250684598],
+		"address": "9605 N Tryon St Z, Charlotte, NC 28262",
+		"phone": "+17049008127",
+		"googleMapsUrl": "https://maps.app.goo.gl/tkoZ4vsPUJpm7uBB9",
+		"websiteUrl": "https://www.ncusfriedchicken.com/"
+	}, 
+    {
+		"name": "US Fried Chicken",
+		"position": [35.2489836652468, -80.83431242967652],
+		"address": "310 E Trade St Suite A150, Charlotte, NC 28202",
+		"phone": "+17049190277",
+		"googleMapsUrl": "https://maps.app.goo.gl/tkoZ4vsPUJpm7uBB9",
+		"websiteUrl": "https://www.usfriedchickenc.com/"
+	},
+    {
+		"name": "US Fried Chicken",
+		"position": [35.22206318466467, -80.75191496742772],
+		"address": "5600 Albemarle Rd St, 800, Charlotte, NC 28212",
+		"phone": "+17044170741",
+		"googleMapsUrl": "https://maps.app.goo.gl/YDjvJT2v5VFzSkMk6",
+		"websiteUrl": "https://www.ncusfriedchicken.com/"
 	}
 ]
