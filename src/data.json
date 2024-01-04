@@ -1,0 +1,26 @@
+[
+	{
+		"name": "US Fried Chicken",
+		"position": [35.30542236165068, -80.80092616216389],
+		"address": "2823 W Sugar Creek Rd, Charlotte, NC 28262",
+		"phone": "+17049212420",
+		"googleMapsUrl": "https://maps.app.goo.gl/74vTZWN6z6jKVxFd6",
+		"websiteUrl": "https://www.ncusfriedchicken.com/"
+	},
+	{
+		"name": "Mustafa's Place Harrisburg",
+		"position": [35.322138602925456, -80.66038090382169],
+		"address": "5084 State Hwy 49, Harrisburg, NC 28075",
+		"phone": "+17044551488",
+		"googleMapsUrl": "https://maps.app.goo.gl/47cof6kYL3sqj3V4A",
+		"websiteUrl": "https://www.mustafasplace.com/"
+	},
+	{
+		"name": "Wrapway",
+		"position": [35.31223940594518, -80.7135779121553],
+		"address": "10221 University City Blvd, Charlotte, NC 28213",
+		"phone": "+17047494525",
+		"googleMapsUrl": "https://maps.app.goo.gl/1y7yXyqQk4y4M8QF9",
+		"websiteUrl": "https://www.wrapway.com/"
+	}
+]
